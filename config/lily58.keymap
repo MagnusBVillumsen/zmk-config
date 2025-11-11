@@ -14,21 +14,22 @@
     behaviors {
         compose_ae: compose_ae {
             compatible = "zmk,behavior-macro";
-            label = "compose_ae";
-            bindings = <&kp RIGHT_CONTROL &kp A &kp E>;   // æ
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_CONTROL &kp A &kp E>;   // Compose + a + e => æ
         };
         compose_oe: compose_oe {
             compatible = "zmk,behavior-macro";
-            label = "compose_oe";
-            bindings = <&kp RIGHT_CONTROL &kp O &kp FSLH>; // ø
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_CONTROL &kp O &kp FSLH>; // Compose + o + / => ø
         };
         compose_aa: compose_aa {
             compatible = "zmk,behavior-macro";
-            label = "compose_aa";
-            bindings = <&kp RIGHT_CONTROL &kp A &kp A>;    // å
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_CONTROL &kp A &kp A>;    // Compose + a + a => å
         };
     };
 };
+
 
 
 / {
